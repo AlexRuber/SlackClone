@@ -17,6 +17,7 @@
 		98E224D21FF5CBBC00D5443F /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E224D01FF5CBBB00D5443F /* SWRevealViewController.m */; };
 		98E224D71FF5D19100D5443F /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E224D61FF5D19100D5443F /* ChatVC.swift */; };
 		98E224D91FF5D19F00D5443F /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E224D81FF5D19F00D5443F /* ChannelVC.swift */; };
+		98E224DB1FF5DAA600D5443F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E224DA1FF5DAA600D5443F /* GradientView.swift */; };
 		A50D198D6C5DC14F1CEE6061 /* Pods_SlackCloneUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 501224400C6DDDAF15818160 /* Pods_SlackCloneUITests.framework */; };
 		A9462B79F6A7F46755EF7B7E /* Pods_SlackClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5E51ED080AB27560C3CD62 /* Pods_SlackClone.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		98E224D11FF5CBBB00D5443F /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		98E224D61FF5D19100D5443F /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		98E224D81FF5D19F00D5443F /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		98E224DA1FF5DAA600D5443F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		A1C236C21E93240E5224B4C8 /* Pods-SlackCloneUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackCloneUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackCloneUITests/Pods-SlackCloneUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C32AA68247DCED0F6FAC38A0 /* Pods-SlackCloneUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackCloneUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackCloneUITests/Pods-SlackCloneUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E9CB75A3D12DB56E32DF9DDB /* Pods-SlackCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackCloneTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlackCloneTests/Pods-SlackCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		98E224D41FF5D16900D5443F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				98E224DA1FF5DAA600D5443F /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -509,6 +512,7 @@
 			files = (
 				98E224D91FF5D19F00D5443F /* ChannelVC.swift in Sources */,
 				98E224D71FF5D19100D5443F /* ChatVC.swift in Sources */,
+				98E224DB1FF5DAA600D5443F /* GradientView.swift in Sources */,
 				98E224A11FF5C20B00D5443F /* AppDelegate.swift in Sources */,
 				98E224D21FF5CBBC00D5443F /* SWRevealViewController.m in Sources */,
 			);
