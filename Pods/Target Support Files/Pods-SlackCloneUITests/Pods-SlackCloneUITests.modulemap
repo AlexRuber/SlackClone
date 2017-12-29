@@ -1,0 +1,6 @@
+framework module Pods_SlackCloneUITests {
+  umbrella header "Pods-SlackCloneUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
