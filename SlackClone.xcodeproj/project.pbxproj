@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		92BB94F0C1834079C3140C4C /* Pods_SlackCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468208D2115345910C96F613 /* Pods_SlackCloneTests.framework */; };
+		984750A11FF6F8D90086C8EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984750A01FF6F8D90086C8EA /* Constants.swift */; };
+		984750A31FF83C620086C8EA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984750A21FF83C620086C8EA /* LoginVC.swift */; };
 		98E224A11FF5C20B00D5443F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E224A01FF5C20B00D5443F /* AppDelegate.swift */; };
 		98E224A61FF5C20B00D5443F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E224A41FF5C20B00D5443F /* Main.storyboard */; };
 		98E224A81FF5C20B00D5443F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E224A71FF5C20B00D5443F /* Assets.xcassets */; };
@@ -44,6 +46,8 @@
 		468208D2115345910C96F613 /* Pods_SlackCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		501224400C6DDDAF15818160 /* Pods_SlackCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C00978C49E1522FE2C6AF2 /* Pods-SlackClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClone/Pods-SlackClone.release.xcconfig"; sourceTree = "<group>"; };
+		984750A01FF6F8D90086C8EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		984750A21FF83C620086C8EA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		98E2249D1FF5C20B00D5443F /* SlackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E224A01FF5C20B00D5443F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E224A51FF5C20B00D5443F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +111,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9847509F1FF6F8AF0086C8EA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				984750A01FF6F8D90086C8EA /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		98E224941FF5C20A00D5443F = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +144,7 @@
 		98E2249F1FF5C20B00D5443F /* SlackClone */ = {
 			isa = PBXGroup;
 			children = (
+				9847509F1FF6F8AF0086C8EA /* Utilities */,
 				98E224D51FF5D16F00D5443F /* Model */,
 				98E224D41FF5D16900D5443F /* View */,
 				98E224D31FF5D16200D5443F /* Controller */,
@@ -178,6 +191,7 @@
 			children = (
 				98E224D61FF5D19100D5443F /* ChatVC.swift */,
 				98E224D81FF5D19F00D5443F /* ChannelVC.swift */,
+				984750A21FF83C620086C8EA /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -512,9 +526,11 @@
 			files = (
 				98E224D91FF5D19F00D5443F /* ChannelVC.swift in Sources */,
 				98E224D71FF5D19100D5443F /* ChatVC.swift in Sources */,
+				984750A31FF83C620086C8EA /* LoginVC.swift in Sources */,
 				98E224DB1FF5DAA600D5443F /* GradientView.swift in Sources */,
 				98E224A11FF5C20B00D5443F /* AppDelegate.swift in Sources */,
 				98E224D21FF5CBBC00D5443F /* SWRevealViewController.m in Sources */,
+				984750A11FF6F8D90086C8EA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
