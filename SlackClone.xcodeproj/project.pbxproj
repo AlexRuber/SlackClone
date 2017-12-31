@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		92BB94F0C1834079C3140C4C /* Pods_SlackCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 468208D2115345910C96F613 /* Pods_SlackCloneTests.framework */; };
+		9805B9211FF9A6C600625257 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9805B9201FF9A6C600625257 /* AuthService.swift */; };
 		984750A11FF6F8D90086C8EA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984750A01FF6F8D90086C8EA /* Constants.swift */; };
 		984750A31FF83C620086C8EA /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984750A21FF83C620086C8EA /* LoginVC.swift */; };
 		984750A51FF83E4D0086C8EA /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984750A41FF83E4D0086C8EA /* CreateAccountVC.swift */; };
@@ -47,6 +48,7 @@
 		468208D2115345910C96F613 /* Pods_SlackCloneTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackCloneTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		501224400C6DDDAF15818160 /* Pods_SlackCloneUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlackCloneUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C00978C49E1522FE2C6AF2 /* Pods-SlackClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlackClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlackClone/Pods-SlackClone.release.xcconfig"; sourceTree = "<group>"; };
+		9805B9201FF9A6C600625257 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		984750A01FF6F8D90086C8EA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		984750A21FF83C620086C8EA /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		984750A41FF83E4D0086C8EA /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
@@ -113,6 +115,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9805B91F1FF9A6B000625257 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9805B9201FF9A6C600625257 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		9847509F1FF6F8AF0086C8EA /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +156,7 @@
 		98E2249F1FF5C20B00D5443F /* SlackClone */ = {
 			isa = PBXGroup;
 			children = (
+				9805B91F1FF9A6B000625257 /* Services */,
 				9847509F1FF6F8AF0086C8EA /* Utilities */,
 				98E224D51FF5D16F00D5443F /* Model */,
 				98E224D41FF5D16900D5443F /* View */,
@@ -530,6 +541,7 @@
 				98E224D91FF5D19F00D5443F /* ChannelVC.swift in Sources */,
 				98E224D71FF5D19100D5443F /* ChatVC.swift in Sources */,
 				984750A51FF83E4D0086C8EA /* CreateAccountVC.swift in Sources */,
+				9805B9211FF9A6C600625257 /* AuthService.swift in Sources */,
 				984750A31FF83C620086C8EA /* LoginVC.swift in Sources */,
 				98E224DB1FF5DAA600D5443F /* GradientView.swift in Sources */,
 				98E224A11FF5C20B00D5443F /* AppDelegate.swift in Sources */,
