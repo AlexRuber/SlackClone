@@ -277,7 +277,7 @@
                                     <action selector="createAccntBtnPressed:" destination="2KE-fJ-kj1" eventType="touchUpInside" id="QBj-76-6lY"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xh-fH-kJF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xh-fH-kJF" customClass="RoundedButton" customModule="SlackClone" customModuleProvider="target">
                                 <rect key="frame" x="62" y="284" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -288,6 +288,11 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -339,7 +344,7 @@
                                     <action selector="closePressed:" destination="2KE-fJ-kj1" eventType="touchUpInside" id="ZpK-1m-0lP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-cH-gnB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTy-cH-gnB" customClass="RoundedButton" customModule="SlackClone" customModuleProvider="target">
                                 <rect key="frame" x="62" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -350,6 +355,14 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createAccntPressed:" destination="8Y4-dE-1Ct" eventType="touchUpInside" id="kgJ-NX-Lzs"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="wOA-KY-VRf">
                                 <rect key="frame" x="63" y="129" width="250" height="133"/>
@@ -416,6 +429,7 @@
                                 <state key="normal" title="Choose avatar"/>
                                 <connections>
                                     <action selector="createAccntBtnPressed:" destination="2KE-fJ-kj1" eventType="touchUpInside" id="pRH-eN-Szp"/>
+                                    <action selector="pickAvatarPressed:" destination="8Y4-dE-1Ct" eventType="touchUpInside" id="ybR-mM-kRN"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="fAL-hp-BH2">
@@ -435,10 +449,12 @@
                                 <state key="normal" title="Generate Background Color"/>
                                 <connections>
                                     <action selector="createAccntBtnPressed:" destination="2KE-fJ-kj1" eventType="touchUpInside" id="Kcu-WM-I13"/>
+                                    <action selector="pickBGColorPressed:" destination="8Y4-dE-1Ct" eventType="touchUpInside" id="6K8-Ur-cd5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Gj0-5t-cSb" firstAttribute="width" secondItem="fAL-hp-BH2" secondAttribute="width" id="0Oh-V5-gzA"/>
                             <constraint firstItem="fAL-hp-BH2" firstAttribute="top" secondItem="wOA-KY-VRf" secondAttribute="bottom" constant="40" id="0c5-20-inu"/>
@@ -457,13 +473,25 @@
                             <constraint firstItem="RBT-xS-eLQ" firstAttribute="top" secondItem="dYn-xb-bjI" secondAttribute="top" constant="40" id="kuS-Ik-wxw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dYn-xb-bjI"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="LhU-5b-ta7" appends="YES" id="a6L-N2-LtX"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="E0J-cF-9VH" id="gZv-y7-sw2"/>
+                        <outlet property="passTxt" destination="P3x-pn-ser" id="zVg-PG-0eT"/>
+                        <outlet property="userImg" destination="fAL-hp-BH2" id="jaG-vA-lqm"/>
+                        <outlet property="usernameTxt" destination="iq8-rZ-F0x" id="5Ut-F3-1kc"/>
                         <segue destination="tZO-eS-21j" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="4n9-Qc-0fE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4R-fV-BKY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="tZO-eS-21j" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="LhU-5b-ta7">
+                    <connections>
+                        <action selector="onTap:" destination="8Y4-dE-1Ct" id="Oua-gv-AeS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1797.5999999999999" y="-512.29385307346331"/>
         </scene>
