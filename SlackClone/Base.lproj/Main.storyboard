@@ -294,7 +294,14 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="2KE-fJ-kj1" eventType="touchUpInside" id="rc9-1b-HR2"/>
+                                </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="YCD-a1-RTV">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.50114327670000003" green="0.43650797009999998" blue="0.91032713649999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -303,7 +310,9 @@
                             <constraint firstItem="6Jr-rZ-cOc" firstAttribute="centerX" secondItem="tzw-vc-7zg" secondAttribute="centerX" id="DH5-84-b8i"/>
                             <constraint firstItem="aM2-RX-oo1" firstAttribute="trailing" secondItem="Dd4-mj-LRn" secondAttribute="trailing" constant="16" id="HxQ-NL-gF4"/>
                             <constraint firstItem="jfC-0O-odQ" firstAttribute="top" secondItem="6Jr-rZ-cOc" secondAttribute="bottom" constant="40" id="ScM-Ou-6X0"/>
+                            <constraint firstItem="YCD-a1-RTV" firstAttribute="centerY" secondItem="tzw-vc-7zg" secondAttribute="centerY" constant="-100" id="Wbh-bI-nCx"/>
                             <constraint firstItem="6Jr-rZ-cOc" firstAttribute="top" secondItem="aM2-RX-oo1" secondAttribute="top" constant="60" id="XTw-2O-63a"/>
+                            <constraint firstItem="YCD-a1-RTV" firstAttribute="centerX" secondItem="tzw-vc-7zg" secondAttribute="centerX" id="a7t-lh-ipA"/>
                             <constraint firstItem="8xh-fH-kJF" firstAttribute="top" secondItem="jfC-0O-odQ" secondAttribute="bottom" constant="40" id="euY-JI-fkD"/>
                             <constraint firstItem="Dd4-mj-LRn" firstAttribute="top" secondItem="aM2-RX-oo1" secondAttribute="top" id="ljJ-Pd-NFK"/>
                             <constraint firstItem="q0C-aZ-KDD" firstAttribute="centerX" secondItem="tzw-vc-7zg" secondAttribute="centerX" id="ohL-57-Yeo"/>
@@ -312,12 +321,15 @@
                         <viewLayoutGuide key="safeArea" id="aM2-RX-oo1"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="eWC-qF-24H" id="fz0-nY-taQ"/>
+                        <outlet property="spinner" destination="YCD-a1-RTV" id="qiy-Rm-kNa"/>
+                        <outlet property="usernameTxt" destination="QJK-QV-1Yz" id="AhZ-N1-ggA"/>
                         <segue destination="8Y4-dE-1Ct" kind="show" identifier="toCreateAccount" id="ug7-nl-l5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wYL-4d-6jU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="984.79999999999995" y="-510.49475262368821"/>
+            <point key="canvasLocation" x="956" y="-522"/>
         </scene>
         <!--Create AccountVC-->
         <scene sceneID="H8g-hd-dVo">
