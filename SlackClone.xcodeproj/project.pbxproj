@@ -25,6 +25,7 @@
 		9855BCFD1FFC602E004ACEE9 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855BCFB1FFC602E004ACEE9 /* AddChannelVC.swift */; };
 		9855BCFE1FFC602E004ACEE9 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9855BCFC1FFC602E004ACEE9 /* AddChannelVC.xib */; };
 		9855BD001FFC71F4004ACEE9 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9855BCFF1FFC71F4004ACEE9 /* SocketService.swift */; };
+		98CB8DC91FFD8CFE00A6120A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CB8DC81FFD8CFE00A6120A /* Message.swift */; };
 		98E224A11FF5C20B00D5443F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E224A01FF5C20B00D5443F /* AppDelegate.swift */; };
 		98E224A61FF5C20B00D5443F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E224A41FF5C20B00D5443F /* Main.storyboard */; };
 		98E224A81FF5C20B00D5443F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E224A71FF5C20B00D5443F /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		9855BCFB1FFC602E004ACEE9 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		9855BCFC1FFC602E004ACEE9 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		9855BCFF1FFC71F4004ACEE9 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		98CB8DC81FFD8CFE00A6120A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		98E2249D1FF5C20B00D5443F /* SlackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E224A01FF5C20B00D5443F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E224A51FF5C20B00D5443F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				9855BCF71FFB4875004ACEE9 /* Channel.swift */,
+				98CB8DC81FFD8CFE00A6120A /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				98E224D91FF5D19F00D5443F /* ChannelVC.swift in Sources */,
 				9855BCEB1FFAD8E7004ACEE9 /* AvatarPickerVC.swift in Sources */,
 				9805B9231FF9B87700625257 /* RoundedButton.swift in Sources */,
+				98CB8DC91FFD8CFE00A6120A /* Message.swift in Sources */,
 				9855BCF81FFB4875004ACEE9 /* Channel.swift in Sources */,
 				9855BCEF1FFAEB27004ACEE9 /* CircleImage.swift in Sources */,
 				9855BCF61FFB4837004ACEE9 /* MessageService.swift in Sources */,
