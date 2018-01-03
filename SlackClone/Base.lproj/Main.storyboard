@@ -71,21 +71,52 @@
                                     <constraint firstItem="S24-Yu-Wa1" firstAttribute="leading" secondItem="eRx-fG-4Y5" secondAttribute="leading" constant="12" id="kZM-EP-Axv"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Message:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AcW-Sl-B2O">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="HIB-ig-fLP"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hp4-od-mch">
+                                <rect key="frame" x="337" y="632" width="30" height="30"/>
+                                <state key="normal" image="send"/>
+                                <connections>
+                                    <action selector="sendMsgPressed:" destination="hqj-mQ-5s3" eventType="touchUpInside" id="sfG-nP-sK4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="eRx-fG-4Y5" firstAttribute="top" secondItem="Qap-rh-bQh" secondAttribute="top" id="3m0-Xw-uVi"/>
                             <constraint firstItem="eRx-fG-4Y5" firstAttribute="trailing" secondItem="jBL-ZE-hzZ" secondAttribute="trailing" id="4UQ-Ap-65r"/>
+                            <constraint firstItem="AcW-Sl-B2O" firstAttribute="leading" secondItem="jBL-ZE-hzZ" secondAttribute="leading" id="BS2-hM-t4J"/>
+                            <constraint firstItem="Hp4-od-mch" firstAttribute="centerY" secondItem="AcW-Sl-B2O" secondAttribute="centerY" id="PaV-jk-RmR"/>
+                            <constraint firstItem="AcW-Sl-B2O" firstAttribute="trailing" secondItem="jBL-ZE-hzZ" secondAttribute="trailing" id="Qy5-bg-z0a"/>
+                            <constraint firstItem="jBL-ZE-hzZ" firstAttribute="trailing" secondItem="Hp4-od-mch" secondAttribute="trailing" constant="8" id="Xri-7y-d5v"/>
                             <constraint firstItem="eRx-fG-4Y5" firstAttribute="leading" secondItem="jBL-ZE-hzZ" secondAttribute="leading" id="eIj-Fi-yqS"/>
+                            <constraint firstItem="AcW-Sl-B2O" firstAttribute="bottom" secondItem="jBL-ZE-hzZ" secondAttribute="bottom" id="uyc-Ho-fdp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jBL-ZE-hzZ"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="jWE-xc-7uh" appends="YES" id="0CT-Pz-SBK"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="channelNameLbl" destination="a6k-TM-eOD" id="aiZ-Jv-5wa"/>
                         <outlet property="menuBtn" destination="S24-Yu-Wa1" id="7jg-C5-iU8"/>
+                        <outlet property="messageTxtBox" destination="AcW-Sl-B2O" id="Tgy-AN-767"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sx-TJ-6yo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="jWE-xc-7uh">
+                    <connections>
+                        <action selector="didTap:" destination="hqj-mQ-5s3" id="cL0-xP-eMu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="628" y="398.95052473763121"/>
         </scene>
@@ -620,6 +651,7 @@
         <image name="closeButton" width="28" height="28"/>
         <image name="menuProfileIcon" width="99" height="99"/>
         <image name="profileDefault" width="192" height="192"/>
+        <image name="send" width="30" height="30"/>
         <image name="smackBack" width="28" height="28"/>
         <image name="smackBurger" width="40" height="40"/>
         <image name="smackLogo" width="48" height="40"/>
