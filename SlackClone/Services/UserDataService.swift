@@ -24,7 +24,6 @@ class UserDataService {
         self.avatarName = avatarName
         self.email = email
         self.name = name
-        
     }
     
     func setAvatarName(avatarName: String) {
@@ -73,5 +72,4 @@ class UserDataService {
         MessageService.instance.clearChannels()
         MessageService.instance.clearMessages()
     }
-    
 }

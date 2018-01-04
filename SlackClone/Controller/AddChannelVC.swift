@@ -30,7 +30,6 @@ class AddChannelVC: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func createChannelPressed(_ sender: Any) {
         guard let channelName = nameTxt.text , nameTxt.text != "" else { return }
         guard let channelDesc = chanDesc.text else { return }
@@ -45,6 +44,4 @@ class AddChannelVC: UIViewController {
         nameTxt.attributedPlaceholder = NSAttributedString(string: "name", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceholder])
         chanDesc.attributedPlaceholder = NSAttributedString(string: "description", attributes: [NSAttributedStringKey.foregroundColor : smackPurplePlaceholder])
     }
-    
-    
 }

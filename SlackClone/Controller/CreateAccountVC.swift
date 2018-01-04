@@ -17,7 +17,6 @@ class CreateAccountVC: UIViewController {
     @IBOutlet weak var userImg: UIImageView!
     @IBOutlet weak var spinner: UIActivityIndicatorView!
     
-    
     // Variables
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
@@ -26,7 +25,6 @@ class CreateAccountVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -42,7 +40,6 @@ class CreateAccountVC: UIViewController {
     @IBAction func closePressed(_ sender: Any) {
         performSegue(withIdentifier: UNWIND, sender: nil)
     }
-    
     
     @IBAction func createAccntPressed(_ sender: Any) {
         
@@ -106,8 +103,6 @@ class CreateAccountVC: UIViewController {
         emailTxt.attributedPlaceholder = NSAttributedString(string: "email", attributes: [NSAttributedStringKey.foregroundColor:smackPurplePlaceholder])
         passTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedStringKey.foregroundColor:smackPurplePlaceholder])
     }
-    
-    
 }
 
 

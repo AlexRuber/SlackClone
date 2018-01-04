@@ -26,13 +26,11 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.channelsLoaded(_:)), name: NOTIF_CHANNELS_LOADED, object: nil)
 
-        
         SocketService.instance.getChannel { (success) in
             if success {
                 self.tableView.reloadData()
             }
         }
-        
         
         SocketService.instance.getChatMessage { (newMessage) in
             if newMessage.channelId != MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
@@ -40,7 +38,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
                 self.tableView.reloadData()
             }
         }
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -63,9 +60,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             addChannel.modalPresentationStyle = .custom
             present(addChannel, animated: true, completion: nil)
         }
-
     }
-    
     
     @objc func userDataDidChange(_ notif: Notification) {
         setUpUserInfo()
@@ -76,7 +71,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
-            
         } else {
             loginBtn.setTitle("Login", for: .normal)
             userImg.image = UIImage(named: "menuProfileIcon")
@@ -93,7 +87,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         } else {
             return UITableViewCell()
         }
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -124,8 +117,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     @objc func channelsLoaded(_ notif: Notification) {
         tableView.reloadData()
     }
-    
-    
 }
 
 

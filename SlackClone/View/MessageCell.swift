@@ -42,5 +42,4 @@ class MessageCell: UITableViewCell {
             timeStampLbl.text = finalDate
         }
     }
-    
 }

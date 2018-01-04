@@ -17,7 +17,6 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var bgView: UIView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -43,5 +42,4 @@ class ProfileVC: UIViewController {
     @IBAction func onTap(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
 }

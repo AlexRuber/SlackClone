@@ -22,8 +22,6 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-
-    
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -78,8 +76,4 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     @IBAction func backPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
-
 }
